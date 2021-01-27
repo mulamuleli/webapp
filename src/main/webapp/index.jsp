@@ -42,7 +42,7 @@
                 <div class="form-group">
                     <input type="password" placeholder="Password" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
+                <button type="submit" class="btn btn-success">Click To Sign In</button>
             </form>
         </div><!--/.navbar-collapse -->
     </div>
