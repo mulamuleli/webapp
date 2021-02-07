@@ -27,7 +27,7 @@ pipeline
       }
     }
         
-   <!-- stage ('Source Composition Analysis') 
+   /* stage ('Source Composition Analysis') 
     {
       steps {
          sh 'rm owasp* || true'
@@ -37,7 +37,7 @@ pipeline
          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
       }
-    } -->
+    } */
      stage('Build')
      {
        steps
