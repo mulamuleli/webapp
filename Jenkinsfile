@@ -55,5 +55,12 @@ pipeline
          }
        }
      }
+     stage ('DAST') {
+      steps {
+        sshagent(['zap']) {
+         sh 'ssh -o  StrictHostKeyChecking=no ubuntu@13.245.37.216 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.244.74.101:8080/webapp/" || true'
+        }
+      }
+    }
   }
 }
